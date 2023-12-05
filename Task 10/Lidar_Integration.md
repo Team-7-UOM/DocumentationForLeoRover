@@ -1,4 +1,4 @@
-#Integration with NUC
+# Integration with NUC
 <h1 align="center"> Using RPLidar with ROS2 </h1>
 This section is dedicated to the installation and usage of RPLidar on your NUC. Once you complete this section, you will be able to visualize RPLidar data with Rviz.
 
