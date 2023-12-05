@@ -1,20 +1,20 @@
-<h1 align="center" > Controlling Robot with Ros </h1>
+<h1 align="center" > Controlling Robot with ROS 2 </h1>
 
 In this section, you will create your first ROS workspace and ROS package. Within your ROS package, you will write a ROS node in Python to move the robot forward and backward at specified intervals. After completing this section, you will also learn how to create launch file and  visualize the robot in RViz.
 
-## Step 1: Creating ROS Workspace and Creating ROS Package ##
+## Step 1: Creating ROS 2 Workspace and Creating ROS 2 Package ##
 
-First, we create a ROS workspace to build our ROS package that we will develop in the following steps.
+First, we create a ROS 2 workspace to build our ROS 2 package that we will develop in the following steps.
 
 Create workspace folders
 ```
-mkdir -p ros_ws/src
+mkdir -p ros2_ws/src
 ```
 
 Create package
 
 ```
-cd ros_ws/src
+cd ros2_ws/src
 ros2 pkg create ros_basics --build-type ament_python --dependencies std_msgs rclpy
 ```
 The name of the package is **ros_basics**, and it depends on **std_msgs** and **rclpy** packages. Now, go to the created package and create a scripts folder where you will place the Python code.
@@ -66,7 +66,7 @@ if __name__=="__main__":
     BasicROS()
     rclpy.spin()
   except rclpy.ROSInterruptException:
-    print("Ros Node Error")
+    print("ROS 2 Node Error")
 ```
 Now, write the following command to grant permission to execute the Python file:
 
@@ -76,7 +76,7 @@ chmod +x move_robot.py
 Finally, build the package:
 ```
 cd
-cd ros_ws
+cd ros2_ws
 colcon build
 ```
 
@@ -84,7 +84,7 @@ colcon build
 
 Open a new terminal and run RViz.
 ```
-source ros_ws/devel/setup.bash
+source ros2_ws/devel/setup.bash
 rviz2
 ```
 Now, you should see the following RViz window:
@@ -112,18 +112,18 @@ Tf Data
 You can save RViz configurations to launch it directly. To do that, create a new folder named 'rviz' inside your package.
 
 ```
-cd ros_ws/src/ros_basics
+cd ros2_ws/src/ros_basics
 mkdir rviz
 ```
-In rviz, go to **File -> Save Config As -> ros_ws/src/ros_basics/rviz** 
+In rviz, go to **File -> Save Config As -> ros2_ws/src/ros_basics/rviz** 
 
 Write **leo_rover.rviz** as the file name.
 
 ## Step 3: Launch File ##
 
-You can create a launch file to start the **move_robot.py** ROS node and load the saved RViz configuration. To do that, first create a **launch** folder.
+You can create a launch file to start the **move_robot.py** ROS 2 node and load the saved RViz configuration. To do that, first create a **launch** folder.
 ```
-cd ros_ws/src/ros_basics
+cd ros2_ws/src/ros_basics
 mkdir launch
 ```
 
@@ -146,7 +146,7 @@ now you can source your workspace and load your launch file by
 
 ```
 cd
-cd ros_ws
+cd ros2_ws
 source devel/setup.bash
 ros2 launch ros_basics robot_move.launch
 ```
