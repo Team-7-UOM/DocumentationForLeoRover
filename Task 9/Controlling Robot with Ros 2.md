@@ -131,16 +131,30 @@ Create a launch file
 
 ```
 cd launch
-gedit robot_move.launch
+gedit robot_move.launch.py
 ```
 and copy following
 ```
-<launch>
-  <node name="robot_node" pkg="ros_basics" type="move_robot.py"
-        required="true" output="screen"/>
+import launch
+from launch import LaunchDescription
+from launch_ros.actions import Node
 
-  <node type="rviz2" name="rviz2" pkg="rviz2" args="-d $(find ros_basics)/rviz/leo_rover.rviz" />
-</launch>
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='ros_basics',
+            executable='move_robot.py',
+            name='robot_node',
+            output='screen'
+        ),
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2',
+            output='screen',
+            arguments=['-d', 'ros_basics/rviz/leo_rover.rviz']
+        )
+    ])
 ```
 now you can source your workspace and load your launch file by
 
@@ -148,5 +162,5 @@ now you can source your workspace and load your launch file by
 cd
 cd ros2_ws
 source devel/setup.bash
-ros2 launch ros_basics robot_move.launch
+ros2 launch ros_basics robot_move.launch.py
 ```
