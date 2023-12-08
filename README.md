@@ -71,3 +71,5 @@ Installation and Setup process for Intel NUC.
   <li>shapes_dataset: folder with some labels and images of the feature extracted from shapes.py</li>
 </ol>
 
+[Task 12: Design Files for the base plate with the Drawings](Task%2012_Design%20Files)
+Design Files for the rover
