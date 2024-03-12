@@ -74,3 +74,7 @@ Installation and Setup process for Intel NUC.
 [Task 12: Design Files for the base plate with the Drawings](Task%2012_Design%20Files)
 
 Design Files for the rover
+
+[Task 13: SLAM and Autonomous Exploration](https://github.com/Team-7-UOM/LEO-SLAM)
+Please click on the following link and follow the instructions mentioned in this repository to simulate autonomous navigation on the Leo Rover
+
