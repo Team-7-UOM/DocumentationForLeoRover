@@ -72,10 +72,12 @@ Installation and Setup process for Intel NUC.
 <ol>
   Design Files for the rover
 </ol>
+
 [Task 13: SLAM and Autonomous Exploration](https://github.com/Team-7-UOM/LEO-SLAM)
 <ol>
   Please click on the following link: https://github.com/Team-7-UOM/LEO-SLAM and follow the instructions mentioned in this repository to simulate autonomous navigation on the Leo Rover
 </ol>
+
 [Task 14: Manipulator Control using MoveIt](https://github.com/Team-7-UOM/Manipulator-Control)
 <ol>
   Please click on the following link: https://github.com/Team-7-UOM/Manipulator-Control and follow the instructions mentioned in this repository to pick and place an object and to perfrom trajectory planning for a robotic manipulator.
