@@ -65,7 +65,7 @@ Installation and Setup process for Intel NUC.
 
 [Task 11: Object Training and Classification](https://github.com/Team-7-UOM/Detect-Objects)
 <ol>
-  Please click on the following link: https://github.com/Team-7-UOM/Detect-Object and follow the instructions mentioned in this repository to identify and differentiate different shapes.
+  Please click on the following link: https://github.com/Team-7-UOM/Detect-Objects and follow the instructions mentioned in this repository to identify and differentiate different shapes.
 </ol>
 
 [Task 12: Design Files for the base plate with the Drawings](Task%2012_Design%20Files)
