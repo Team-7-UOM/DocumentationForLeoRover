@@ -63,19 +63,21 @@ Installation and Setup process for Intel NUC.
 </ol>
 
 
-[Task 11: Object Training and Classification](Task%2011_ObjectIdentification)
+[Task 11: Object Training and Classification](https://github.com/Team-7-UOM/Detect-Objects)
 <ol>
-  <li>shapes.py -  Used for Capturing images of our selected region and extracts  the contours</li>
-  <li>training.py - Used to train the model for identifying the type of shape</li>
-  <li>testing.py - Used to verify with live camera feedback if the object can be identified in real-time.</li>
-  <li>shapes_dataset: folder with some labels and images of the feature extracted from shapes.py</li>
+  Please click on the following link: https://github.com/Team-7-UOM/Detect-Object and follow the instructions mentioned in this repository to identify and differentiate different shapes.
 </ol>
 
 [Task 12: Design Files for the base plate with the Drawings](Task%2012_Design%20Files)
-
-Design Files for the rover
-
+<ol>
+  Design Files for the rover
+</ol>
 [Task 13: SLAM and Autonomous Exploration](https://github.com/Team-7-UOM/LEO-SLAM)
-
-Please click on the following link: https://github.com/Team-7-UOM/LEO-SLAM and follow the instructions mentioned in this repository to simulate autonomous navigation on the Leo Rover
+<ol>
+  Please click on the following link: https://github.com/Team-7-UOM/LEO-SLAM and follow the instructions mentioned in this repository to simulate autonomous navigation on the Leo Rover
+</ol>
+[Task 14: Manipulator Control using MoveIt](https://github.com/Team-7-UOM/Manipulator-Control)
+<ol>
+  Please click on the following link: https://github.com/Team-7-UOM/Manipulator-Control and follow the instructions mentioned in this repository to pick and place an object and to perfrom trajectory planning for a robotic manipulator.
+</ol>
 
